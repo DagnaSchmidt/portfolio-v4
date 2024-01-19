@@ -2,12 +2,19 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const pagesSlice = createSlice({
     name: 'pages',
-    initialState: {},
+    initialState: {
+        page: 'home'
+    },
     reducers: {
-
+        setReducerPage(state, action) {
+            return {
+                ...state,
+                page: action.payload
+            }
+        }
     }
 });
 
 
-export const {  } = pagesSlice.actions;
+export const { setReducerPage } = pagesSlice.actions;
 export default pagesSlice.reducer;
