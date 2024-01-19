@@ -1,3 +1,80 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* font import */
+@font-face {
+    font-family: 'Xillian';
+    src: url('../fonts/Xillian-Regular.otf');
+}
+@font-face {
+    font-family: 'Amulya-Bold';
+    src: url('../fonts/Amulya-Bold.otf');
+}
+@font-face {
+    font-family: 'Amulya-BoldItalic';
+    src: url('../fonts/Amulya-BoldItalic.otf');
+}
+@font-face {
+    font-family: 'Amulya-Italic';
+    src: url('../fonts/Amulya-Italic.otf');
+}
+@font-face {
+    font-family: 'Amulya-Light';
+    src: url('../fonts/Amulya-Light.otf');
+}
+@font-face {
+    font-family: 'Amulya-LightItalic';
+    src: url('../fonts/Amulya-LightItalic.otf');
+}
+@font-face {
+    font-family: 'Amulya-Medium';
+    src: url('../fonts/Amulya-Medium.otf');
+}
+@font-face {
+    font-family: 'Amulya-MediumItalic';
+    src: url('../fonts/Amulya-MediumItalic.otf');
+}
+@font-face {
+    font-family: 'Amulya-Regular';
+    src: url('../fonts/Amulya-Regular.otf');
+}
+
+/* hide scrollbars class */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* font classes */
+
+.xillian {
+    font-family: 'Xillian';
+}
+.amulya-bold {
+    font-family: 'Amulya-Bold';
+}
+.amulya-bold-italic {
+    font-family: 'Amulya-BoldItalic';
+}
+.amulya-italic {
+    font-family: 'Amulya-Italic';
+}
+.amulya-light {
+    font-family: 'Amulya-Light';
+}
+.amulya-light-italic {
+    font-family: 'Amulya-LightItalic';
+}
+.amulya-medium {
+    font-family: 'Amulya-Medium';
+}
+.amulya-medium-italic {
+    font-family: 'Amulya-MediumItalic';
+}
+.amulya {
+    font-family: 'Amulya-Regular';
+}
