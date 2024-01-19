@@ -1,14 +1,15 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
 import './styles/index.css';
+
+//components
+import MainContainer from './components/containers/MainContainer';
+
 
 function App() {
   return (
-    <>
-      <Routes>
-        <Route path='/' element={<HomePage />} />
-      </Routes>
-    </>
+    <div>
+      <MainContainer />
+    </div>
   );
 }
 
