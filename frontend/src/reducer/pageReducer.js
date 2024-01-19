@@ -15,6 +15,12 @@ const pagesSlice = createSlice({
     }
 });
 
+export const setHomePage = () => {
+    return dispatch => {
+        dispatch(setReducerPage('home'));
+    }
+};
+
 
 export const { setReducerPage } = pagesSlice.actions;
 export default pagesSlice.reducer;
