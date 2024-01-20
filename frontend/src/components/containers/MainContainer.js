@@ -1,13 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { motion, AnimatePresence } from 'framer-motion';
 
 //actions
 import { setAboutPage, setWorkPage } from '../../reducer/pageReducer';
+import WorkPage from '../work/WorkPage';
+import AboutPage from '../about/AboutPage';
 
 const MainContainer = () => {
     const dispatch = useDispatch();
     const page = useSelector(state => state.pages.page);
+
+    const [isHover, setIsHover] = useState({
+        isHover: false,
+        button: ''
+    });
+
+    const handleClickWork = () => {
+        dispatch(setWorkPage());
+        setIsHover({isHover: false, button: ''});
+    }
+
+    const handleClickAbout = () => {
+        dispatch(setAboutPage());
+        setIsHover({isHover: false, button: ''});
+    }
 
     const variants = {
         close: {
@@ -17,6 +34,10 @@ const MainContainer = () => {
         open: {
             width: '100dvw',
             height: '100dvh'
+        },
+        hover: {
+            width: '100dvw',
+            height: '2px'
         }
     }
 
@@ -37,12 +58,13 @@ const MainContainer = () => {
                 page === 'home' &&
 
                     <motion.div
-                        className='peer/work'
+                        onMouseEnter={() => setIsHover({isHover: true, button: 'work'})}
+                        onMouseLeave={() => setIsHover({isHover: false, button: ''})}
                     >
                         <button
-                            onClick={() => dispatch(setWorkPage())}
+                            onClick={handleClickWork}
                         >
-                            <p className='text-primary text-sm amulya-medium hover:amulya-bold'>
+                            <p className={`text-primary text-sm ${isHover.button === 'work' ? 'amulya-bold' : isHover.isHover ? 'opacity-35' : 'opacity-100'}`}>
                                 Work
                             </p>
                         </button>
@@ -51,12 +73,15 @@ const MainContainer = () => {
         </AnimatePresence>
 
         <motion.div
-            className='bg-primary '
+            className='bg-primary'
             variants={variants}
             initial='close'
-            animate={page === 'home' ? 'close' : 'open'}
+            animate={page !== 'home' ? 'open' : isHover.isHover ? 'hover' : 'close'}
         >
-
+            {
+                page === 'work' && <WorkPage /> ||
+                page === 'about' && <AboutPage />
+            }
         </motion.div>
 
         <AnimatePresence>
@@ -64,12 +89,13 @@ const MainContainer = () => {
                 page === 'home' &&
 
                     <motion.div
-                        className='peer/about'
+                        onMouseEnter={() => setIsHover({isHover: true, button: 'about'})}
+                        onMouseLeave={() => setIsHover({isHover: false, button: ''})}
                     >
                         <button
-                            onClick={() => dispatch(setAboutPage())}
+                            onClick={handleClickAbout}
                         >
-                            <p className='text-primary text-sm amulya-medium hover:amulya-bold'>
+                            <p className={`text-primary text-sm ${isHover.button === 'about' ? 'amulya-bold' : isHover.isHover ? 'opacity-35' : 'opacity-100'}`}>
                                 About
                             </p>
                         </button>
