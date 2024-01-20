@@ -39,7 +39,7 @@ const Logo = () => {
 
   return (
     <motion.div
-        className='absolute flex flex-col gap-2 max-w-[1280px] w-full px-2 md:px-8 xl:px-24'
+        className='absolute flex flex-col gap-2 max-w-[1480px] w-full px-2 md:px-8 xl:px-24'
         initial={{bottom: '50%'}}
         animate={{bottom: '5%'}}
         transition={{
