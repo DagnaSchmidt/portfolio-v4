@@ -31,7 +31,7 @@ const Logo = () => {
             borderWidth: '0px',
             alignSelf: 'start',
             transition: {
-                duration: 0.2
+                duration: 0.3
             }
         }
     }
@@ -68,7 +68,7 @@ const Logo = () => {
             }
         </AnimatePresence>
 
-
+        <AnimatePresence>
         <motion.button
             initial='before'
             variants={variants}
@@ -85,6 +85,7 @@ const Logo = () => {
             </p>
 
         </motion.button>
+        </AnimatePresence>
 
     </motion.div>
   )
