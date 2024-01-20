@@ -73,7 +73,7 @@ const Logo = () => {
             initial='before'
             variants={variants}
             animate={page === 'home' ? 'open' : 'close'}
-            className='h-11 flex justify-center items-center bg-primary border-primary text-secondary rounded-full overflow-hidden'
+            className={`h-11 flex justify-center items-center border-primary ${page === 'home' || page === 'project' ? 'text-secondary bg-primary' : 'text-primary bg-secondary'} rounded-full overflow-hidden`}
             disabled={page === 'home' ? true : false}
             onClick={() => dispatch(setHomePage())}
         >
