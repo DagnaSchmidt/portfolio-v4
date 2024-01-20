@@ -13,45 +13,48 @@ const Logo = () => {
     const variants = {
         before: {
             width: '44px',
-            top: '50%',
-            left: 0,
-            right: 0,
-            margin: 'auto',
             borderWidth: '30px',
+            alignSelf: 'center'
+        },
+        open: {
+            width: '240px',
+            borderWidth: '0px',
+            alignSelf: 'center',
             transition: {
                 delay: 0.6,
                 duration: 0.7,
                 ease: 'backInOut'
             }
         },
-        open: {
-            width: '240px',
-            top: '90%',
-            left: 0,
-            right: 0,
-            margin: 'auto',
-            borderWidth: '0px'
-        },
         close: {
             width: '44px',
-            top: '90%',
             borderWidth: '0px',
-            left: '100px',
-            right: 'auto',
-            margin: 0
+            alignSelf: 'start',
+            transition: {
+                duration: 0.2
+            }
         }
     }
 
 
   return (
-    <div>
+    <motion.div
+        className='absolute flex flex-col gap-2 max-w-[1280px] w-full px-2 md:px-8 xl:px-24'
+        initial={{bottom: '50%'}}
+        animate={{bottom: '5%'}}
+        transition={{
+            delay: 0.6,
+            duration: 0.7,
+            ease: 'backInOut'
+        }}
+    >
 
         <AnimatePresence>
             {
                 page === 'home' &&
 
                     <motion.p
-                        className='absolute top-[85%] right-0 left-0 m-auto text-center amulya text-primary text-sm'
+                        className='text-center amulya text-primary text-sm'
                         initial={{opacity: 0}}
                         animate={{opacity: 1}}
                         transition={{
@@ -69,13 +72,8 @@ const Logo = () => {
         <motion.button
             initial='before'
             variants={variants}
-            transition={{
-                delay: 0.6,
-                duration: 0.7,
-                ease: 'backInOut'
-            }}
             animate={page === 'home' ? 'open' : 'close'}
-            className='absolute left-0 right-0 m-auto h-11 flex justify-center items-center bg-primary border-primary text-secondary rounded-full overflow-hidden'
+            className='h-11 flex justify-center items-center bg-primary border-primary text-secondary rounded-full overflow-hidden'
             disabled={page === 'home' ? true : false}
             onClick={() => dispatch(setHomePage())}
         >
@@ -88,7 +86,7 @@ const Logo = () => {
 
         </motion.button>
 
-    </div>
+    </motion.div>
   )
 }
 

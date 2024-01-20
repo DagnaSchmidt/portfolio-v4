@@ -3,7 +3,8 @@ import { createSlice } from '@reduxjs/toolkit';
 const pagesSlice = createSlice({
     name: 'pages',
     initialState: {
-        page: 'home'
+        page: 'home',
+        project: ''
     },
     reducers: {
         setReducerPage(state, action) {
@@ -18,6 +19,18 @@ const pagesSlice = createSlice({
 export const setHomePage = () => {
     return dispatch => {
         dispatch(setReducerPage('home'));
+    }
+};
+
+export const setWorkPage = () => {
+    return dispatch => {
+        dispatch(setReducerPage('work'));
+    }
+};
+
+export const setAboutPage = () => {
+    return dispatch => {
+        dispatch(setReducerPage('about'));
     }
 };
 
