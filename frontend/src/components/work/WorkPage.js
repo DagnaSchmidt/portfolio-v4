@@ -31,7 +31,7 @@ const WorkPage = () => {
           return (
             <>
               <WorkListItem key={i.id} data={i} isHover={isHover} setIsHover={setIsHover} />
-              <ProjectContainer />
+              <ProjectContainer title={i.title} />
             </>
 
           )
