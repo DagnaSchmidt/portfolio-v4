@@ -78,10 +78,12 @@ const MainContainer = () => {
             initial='close'
             animate={page !== 'home' ? 'open' : isHover.isHover ? 'hover' : 'close'}
         >
-            {
-                page === 'work' && <WorkPage /> ||
-                page === 'about' && <AboutPage />
-            }
+            <AnimatePresence>
+                {
+                    (page === 'work' && <WorkPage />) ||
+                    (page === 'about' && <AboutPage />)
+                }
+            </AnimatePresence>
         </motion.div>
 
         <AnimatePresence>

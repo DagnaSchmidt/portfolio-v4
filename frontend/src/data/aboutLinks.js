@@ -1,7 +1,7 @@
 export const aboutLinks = [
     {
         id: 1,
-        link: '',
+        link: 'https://www.linkedin.com/in/dagna-schmidt-90ba37207/',
         title: 'LinkedIn'
     },
     {
@@ -11,17 +11,17 @@ export const aboutLinks = [
     },
     {
         id: 3,
-        link: '',
+        link: 'https://github.com/DagnaSchmidt',
         title: 'GitHub'
     },
     {
         id: 4,
-        link: '',
+        link: 'https://dribbble.com/dagnaS',
         title: 'Dribbble'
     },
     {
         id: 5,
-        link: '',
+        link: 'https://www.instagram.com/b.ardzo/',
         title: 'Instagram'
     }
 ]
