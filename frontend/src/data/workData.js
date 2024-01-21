@@ -3,7 +3,7 @@ export const workData = [
         id: 1,
         title: 'Boring Stories',
         categories: ['Website design', 'Frontend', 'Backend'],
-        description: ''
+        description: 'United Way is a prominent, nation-wide nonprofit addressing inequalities and helping undeserved communities across the United States.'
     },
     {
         id: 2,
