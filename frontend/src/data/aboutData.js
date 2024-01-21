@@ -3,8 +3,18 @@ export const aboutData = {
     other: [
         {
             id: 1,
-            title: '',
+            title: 'broke polish squat record with 176 kg',
+            link: 'https://www.instagram.com/p/CQYB7vcgyBI/?igsh=MWttbmFtYjBzYmllZw=='
+        },
+        {
+            id: 2,
+            title: 'took photos in a coffee can',
+            link: 'https://www.instagram.com/p/CQYB7vcgyBI/?igsh=MWttbmFtYjBzYmllZw=='
+        },
+        {
+            id: 3,
+            title: 'love to swim in any water temperature',
             link: ''
-        }
+        },
     ]
 }
