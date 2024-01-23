@@ -3,7 +3,8 @@ export const workData = [
         id: 1,
         title: 'Boring Stories',
         categories: ['Website design', 'Frontend', 'Backend'],
-        description: 'United Way is a prominent, nation-wide nonprofit addressing inequalities and helping undeserved communities across the United States.'
+        description: "Boring Stories website is a photographer's blog. Boasts a clean and simple design, letting the stories take center stage. No distractions, just the pure joy of storytelling.",
+        component: '<BoringStories />'
     },
     {
         id: 2,

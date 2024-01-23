@@ -4,7 +4,7 @@ const pagesSlice = createSlice({
     name: 'pages',
     initialState: {
         page: 'home',
-        project: ''
+        project: null
     },
     reducers: {
         setReducerPage(state, action) {
@@ -17,6 +17,12 @@ const pagesSlice = createSlice({
             return {
                 ...state,
                 project: action.payload
+            }
+        },
+        clearReducerProject(state, action) {
+            return {
+                ...state,
+                project: null
             }
         }
     }
@@ -44,8 +50,14 @@ export const setProject = (data) => {
     return dispatch => {
         dispatch(setReducerProject(data));
     }
-}
+};
+
+export const clearProject = () => {
+    return dispatch => {
+        dispatch(clearReducerProject());
+    }
+};
 
 
-export const { setReducerPage, setReducerProject } = pagesSlice.actions;
+export const { setReducerPage, setReducerProject, clearReducerProject } = pagesSlice.actions;
 export default pagesSlice.reducer;

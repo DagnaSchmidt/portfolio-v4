@@ -29,7 +29,7 @@ const AboutPage = () => {
       <div className='flex flex-col md:flex-row gap-10'>
         <div className='flex flex-col gap-3 xl:gap-5 pt-8 xl:pt-0'>
           <h2 className='amulya-bold text-xl md:text-2xl xl:text-3xl tracking-wider'>Hello, I am Dagna</h2>
-          <p className='amulya text-sm pl-12'>{aboutData.description}</p>
+          <p className='amulya text-sm lg:text-base pl-12'>{aboutData.description}</p>
         </div>
         <div className='w-32 self-center md:self-end md:mx-12 xl:mx-24'>
           <a href='https://drive.google.com/file/d/1WKHFIS0NgqPQNKMfsBXUicBmwguKJXlD/view?usp=drive_link' target='_blank' rel='noreferrer' className='amulya-light hover:italic w-32 pb-1 border-b border-secondary whitespace-nowrap'>
