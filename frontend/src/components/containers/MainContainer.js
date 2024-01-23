@@ -44,7 +44,7 @@ const MainContainer = () => {
 
   return (
     <motion.div
-        className='w-full h-full flex flex-col justify-center items-center gap-7 overflow-y-scroll scrollbar-hide'
+        className='w-full h-full flex flex-col justify-center items-center gap-7'
         initial={{opacity: 0}}
         animate={{opacity: 1}}
         transition={{

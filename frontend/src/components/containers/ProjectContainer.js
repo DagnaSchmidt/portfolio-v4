@@ -1,7 +1,11 @@
 import React from 'react';
 import  { AnimatePresence, motion } from 'framer-motion';
 import { useSelector } from 'react-redux';
+
+//components
 import BoringStories from '../projects/BoringStories';
+import Mi from '../projects/Mi';
+
 
 const ProjectContainer = () => {
     const project = useSelector(state => state.pages.project);
@@ -26,14 +30,16 @@ const ProjectContainer = () => {
 
             <AnimatePresence>
                 {
-                    project === 'Boring Stories' &&
-                    <BoringStories />
+                    project === 'Boring Stories' && <BoringStories />
+                }
+                {
+                    project === 'Mi' && <Mi />
                 }
             </AnimatePresence>
 
         </motion.div>
 
   )
-}
+};
 
 export default ProjectContainer;

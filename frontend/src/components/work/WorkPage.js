@@ -20,7 +20,7 @@ const WorkPage = () => {
 
   return (
     <motion.div
-      className='w-full h-full flex flex-col gap-4 items-center'
+      className='w-full h-full flex flex-col items-center overflow-y-scroll scrollbar-hide'
       initial={{opacity: 0}}
       animate={{opacity: 1}}
       transition={{
