@@ -12,7 +12,7 @@ import AboutListItem from './AboutListItem';
 const AboutPage = () => {
   return (
     <motion.div
-      className='w-full max-w-[1480px] h-full px-2 md:px-8 xl:px-56 pt-6 flex flex-col gap-10 md:gap-20 xl:gap-32 text-secondary'
+      className='w-full max-w-[1480px] h-full px-2 md:px-8 xl:px-56 pt-6 flex flex-col gap-10 md:gap-20 xl:gap-24 text-secondary'
       initial={{opacity: 0}}
       animate={{opacity: 1}}
       transition={{
