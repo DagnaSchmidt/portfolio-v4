@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from 'react-redux';
 
 //icons
 import ArrowBack from '../../icons/ArrowBack.svg';
+import ArrowBackWhite from '../../icons/ArrowBackWhite.svg';
 
 //actions
 import { setHomePage, clearProject } from '../../reducer/pageReducer';
@@ -46,9 +47,9 @@ const BackButton = () => {
                             ease: 'anticipate'
                         }}
                         onClick={handlePageBack}
-                        className={`${project === null ? 'bg-secondary text-primary' : ''} h-11 w-11 flex justify-center items-center rounded-full`}
+                        className={`${project === null ? 'bg-secondary' : 'bg-primary'} h-11 w-11 flex justify-center items-center rounded-full`}
                     >
-                        <img src={ArrowBack} alt='arrow back' className='h-4 w-4' />
+                        <img src={project === null ? ArrowBack : ArrowBackWhite} alt='arrow back' className='h-4 w-4' />
                     </motion.button>
             }
         </AnimatePresence>

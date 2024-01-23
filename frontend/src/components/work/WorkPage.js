@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
+import { useSelector } from 'react-redux';
 
 //data
 import { workData } from '../../data/workData';
@@ -9,6 +10,8 @@ import WorkListItem from './WorkListItem';
 import ProjectContainer from '../containers/ProjectContainer';
 
 const WorkPage = () => {
+    const project = useSelector(state => state.pages.project);
+
     const [isHover, setIsHover] = useState({
       isHover: false,
       button: ''
@@ -17,29 +20,26 @@ const WorkPage = () => {
 
   return (
     <motion.div
-      className='w-full max-w-[1480px] h-full px-2 md:px-8 xl:px-56 pt-6 flex flex-col gap-10 md:gap-20'
+      className='w-full h-full flex flex-col gap-4 items-center'
       initial={{opacity: 0}}
       animate={{opacity: 1}}
       transition={{
-      delay: 0.5,
-      duration: 0.3
-    }}
+        delay: 0.5,
+        duration: 0.3
+      }}
     >
+      <AnimatePresence>
+        {
+          project !== null && <ProjectContainer />
+        }
+      </AnimatePresence>
 
       {
-        workData.map(i => {
-          return (
-            <>
-              <WorkListItem key={i.id} data={i} isHover={isHover} setIsHover={setIsHover} />
-              <ProjectContainer title={i.title} />
-            </>
-
-          )
-        })
+        workData.map(i => <WorkListItem key={i.id} data={i} isHover={isHover} setIsHover={setIsHover} /> )
       }
 
     </motion.div>
   )
-}
+};
 
 export default WorkPage;
