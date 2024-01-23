@@ -9,7 +9,7 @@ import BackButton from './components/backButton/BackButton';
 
 function App() {
   return (
-    <div className='relative w-full h-dvh flex justify-center'>
+    <div className='relative w-full h-dvh flex justify-center bg-secondary'>
       <MainContainer />
       <Logo />
       <BackButton />

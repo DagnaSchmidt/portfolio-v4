@@ -3,34 +3,36 @@ import  { AnimatePresence, motion } from 'framer-motion';
 import { useSelector } from 'react-redux';
 import BoringStories from '../projects/BoringStories';
 
-const ProjectContainer = ({title}) => {
+const ProjectContainer = () => {
     const project = useSelector(state => state.pages.project);
 
-    const variants = {
-        close: {
-            width: '128px',
-            height: '1px'
-        },
-        open: {
-            width: '100dvw',
-            height: '100dvh'
-        }
-    }
-  return (
-    <motion.div
-        className='bg-secondary'
-        variants={variants}
-        initial='close'
-        animate={project === title ? 'open' : 'close'}
-    >
-        <AnimatePresence>
-            {
-                project === 'Boring Stories' &&
-                <BoringStories />
-            }
-        </AnimatePresence>
 
-    </motion.div>
+  return (
+        <motion.div
+            className='bg-secondary w-full'
+            initial={{
+                height: 0
+            }}
+            animate={{
+                height: '100%'
+            }}
+            exit={{
+                height: 0
+            }}
+            transition={{
+                duration: 0.3
+            }}
+        >
+
+            <AnimatePresence>
+                {
+                    project === 'Boring Stories' &&
+                    <BoringStories />
+                }
+            </AnimatePresence>
+
+        </motion.div>
+
   )
 }
 

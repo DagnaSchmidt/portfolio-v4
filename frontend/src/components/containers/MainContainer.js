@@ -32,11 +32,11 @@ const MainContainer = () => {
             height: '1px'
         },
         open: {
-            width: '100dvw',
-            height: '100dvh'
+            width: '100%',
+            height: '100%'
         },
         hover: {
-            width: '100dvw',
+            width: '100%',
             height: '2px'
         }
     }
@@ -44,7 +44,7 @@ const MainContainer = () => {
 
   return (
     <motion.div
-        className='w-full h-full flex flex-col justify-center items-center gap-7'
+        className='w-full h-full flex flex-col justify-center items-center gap-7 overflow-y-scroll scrollbar-hide'
         initial={{opacity: 0}}
         animate={{opacity: 1}}
         transition={{
