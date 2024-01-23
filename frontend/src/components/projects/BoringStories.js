@@ -1,9 +1,18 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+//data
+import { workData } from '../../data/workData';
+import { boringStoriesData } from '../../data/boringStoriesData';
+
+//components
+import ProjectHeader from '../work/ProjectHeader';
+
 const BoringStories = () => {
+
   return (
     <motion.div
+      className='w-full max-w-[1480px] h-full px-2 md:px-8 xl:px-56 pt-6 flex flex-col gap-10 text-primary'
       initial={{opacity: 0}}
       animate={{opacity: 1}}
       transition={{
@@ -11,7 +20,7 @@ const BoringStories = () => {
         duration: 0.3
       }}
     >
-      Boring Stories
+      <ProjectHeader data={workData[0]} />
     </motion.div>
   )
 }
