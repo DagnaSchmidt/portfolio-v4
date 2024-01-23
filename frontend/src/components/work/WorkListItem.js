@@ -22,16 +22,12 @@ const WorkListItem = ({data, isHover, setIsHover}) => {
         {
             project === null &&
                 <motion.div
-                    className={`max-w-[1480px] pt-12 px-2 md:px-8 xl:px-56 text-secondary flex flex-col gap-2 ${isHover.button === title ? 'opacity-100 cursor-pointer' : isHover.isHover ? 'opacity-35' : 'opacity-100'}`}
+                    className={`max-w-[1480px] py-8 px-2 md:px-8 xl:px-56 text-secondary flex flex-col gap-2 ${isHover.button === title ? 'opacity-100 cursor-pointer' : isHover.isHover ? 'opacity-35' : 'opacity-100'}`}
                     onMouseEnter={() => setIsHover({isHover: true, button: title})}
                     onMouseLeave={() => setIsHover({isHover: false, button: ''})}
                     onClick={() => dispatch(setProject(title))}
                 >
-                    <div className='flex gap-4 amulya-light text-xs'>
-                        {
-                            categories.map(i => <p key={i}>{i}</p>)
-                        }
-                    </div>
+                    <p className='amulya-light text-xs'>{categories}</p>
                     <div className='flex justify-between'>
                         <h3 className='amulya-bold text-xl md:text-2xl xl:text-3xl tracking-wider'>{title}</h3>
                         <img src={isHover.button === title ? ArrowUpBold : ArrowUp} className='w-8 h-8' alt='arrow up icon' />
