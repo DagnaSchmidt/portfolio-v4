@@ -9,6 +9,7 @@ import { setHomePage } from '../../reducer/pageReducer';
 const Logo = () => {
     const dispatch = useDispatch();
     const page = useSelector(state => state.pages.page);
+    const project = useSelector(state => state.pages.project);
 
     const variants = {
         before: {
@@ -73,7 +74,7 @@ const Logo = () => {
             initial='before'
             variants={variants}
             animate={page === 'home' ? 'open' : 'close'}
-            className={`h-11 flex justify-center items-center border-primary ${page === 'home' || page === 'project' ? 'text-secondary bg-primary' : 'text-primary bg-secondary'} rounded-full overflow-hidden`}
+            className={`h-11 flex justify-center items-center border-primary ${page === 'home' || project !== null ? 'text-secondary bg-primary' : 'text-primary bg-secondary'} rounded-full overflow-hidden`}
             disabled={page === 'home' ? true : false}
             onClick={() => dispatch(setHomePage())}
         >
