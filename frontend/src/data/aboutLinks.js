@@ -6,21 +6,16 @@ export const aboutLinks = [
     },
     {
         id: 2,
-        link: '',
-        title: 'Email'
-    },
-    {
-        id: 3,
         link: 'https://github.com/DagnaSchmidt',
         title: 'GitHub'
     },
     {
-        id: 4,
+        id: 3,
         link: 'https://dribbble.com/dagnaS',
         title: 'Dribbble'
     },
     {
-        id: 5,
+        id: 4,
         link: 'https://www.instagram.com/b.ardzo/',
         title: 'Instagram'
     }
