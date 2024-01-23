@@ -13,7 +13,7 @@ const WorkListItem = ({data, isHover, setIsHover}) => {
     const project = useSelector(state => state.pages.project)
     const { title, categories, description } = data;
 
-    if(project.length > 0){
+    if(project !== null){
         return null;
     }
 
@@ -31,7 +31,7 @@ const WorkListItem = ({data, isHover, setIsHover}) => {
         </div>
         <div className='flex justify-between'>
             <h3 className='amulya-bold text-xl md:text-2xl xl:text-3xl tracking-wider'>{title}</h3>
-            <img src={isHover.button === title ? ArrowUpBold : ArrowUp} className='w-8 h-8' />
+            <img src={isHover.button === title ? ArrowUpBold : ArrowUp} className='w-8 h-8' alt='arrow up icon' />
         </div>
         <p className='pl-12'>
             {description}
