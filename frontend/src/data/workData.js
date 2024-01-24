@@ -2,6 +2,7 @@ export const workData = [
     {
         id: 1,
         title: 'Boring Stories',
+        prevImg: 'prev_boringStories.png',
         categories: 'Website design  ||  Frontend  ||  Backend',
         description: "Boring Stories website is a photographer's blog. Boasts a clean and simple design, letting the stories take center stage. No distractions, just the pure joy of storytelling.",
         links: [
@@ -37,6 +38,7 @@ export const workData = [
     {
         id: 2,
         title: 'Mi',
+        prevImg: 'prev_mi.png',
         categories: 'App design  ||  UX / UI  ||  Design System',
         description: "Recognizing the diverse needs of users in balancing work, personal life, and health, this project aims to create a calendar application that seamlessly integrates functionality, style, and personalization.",
         links: [
@@ -67,12 +69,14 @@ export const workData = [
     {
         id: 3,
         title: 'Movies4you',
+        prevImg: 'prev_movies4you.png',
         categories: 'App design  ||  UI',
         description: "Boring Stories website is a photographer's blog. Boasts a clean and simple design, letting the stories take center stage. No distractions, just the pure joy of storytelling.",
     },
     {
         id: 4,
         title: 'Finovo',
+        prevImg: 'prev_finovo.png',
         categories: 'App design  ||  UI',
         description: "Boring Stories website is a photographer's blog. Boasts a clean and simple design, letting the stories take center stage. No distractions, just the pure joy of storytelling.",
     }
