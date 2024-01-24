@@ -19,7 +19,7 @@
     <br />
     <a href="https://d-schmidt.netlify.app">View Demo</a>
     ·
-    <a href="https://dribbble.com/shots/23010524-Boring-Stories-UI">View UI design</a>
+    <a href="https://dribbble.com/shots/23507444-Developer-Portfolio">View UI design</a>
   </p>
 </div>
 
