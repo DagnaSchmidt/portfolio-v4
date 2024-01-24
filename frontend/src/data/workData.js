@@ -37,8 +37,32 @@ export const workData = [
     {
         id: 2,
         title: 'Mi',
-        categories: 'App design  ||  UX / UI  ||  Frontend  ||  Backend',
-        description: "Boring Stories website is a photographer's blog. Boasts a clean and simple design, letting the stories take center stage. No distractions, just the pure joy of storytelling.",
+        categories: 'App design  ||  UX / UI  ||  Design System',
+        description: "Recognizing the diverse needs of users in balancing work, personal life, and health, this project aims to create a calendar application that seamlessly integrates functionality, style, and personalization.",
+        links: [
+            {
+                id: 1,
+                title: 'Prototype',
+                link: 'https://boring-stories.netlify.app/'
+            },
+            {
+                id: 2,
+                title: 'UI design',
+                link: 'https://boring-stories.netlify.app/'
+            },
+            {
+                id: 3,
+                title: 'Design System',
+                link: 'https://boring-stories.netlify.app/'
+            }
+        ],
+        buildOn: [
+            {
+                id: 1,
+                title: 'Frontend',
+                stack: ['Figma']
+            }
+        ]
     },
     {
         id: 3,

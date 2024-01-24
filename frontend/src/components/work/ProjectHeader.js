@@ -21,7 +21,7 @@ const ProjectHeader = ({data}) => {
         <div className='flex flex-col gap-2'>
             <p className='amulya-light text-xs'>{categories}</p>
             <h3 className='amulya-bold text-2xl md:text-3xl xl:text-4xl tracking-wider'>{title}</h3>
-            <p className='amulya text-sm lg:text-base pl-12 '>{description}</p>
+            <p className='amulya text-sm lg:text-base pl-12'>{description}</p>
         </div>
         <div className='flex gap-6 self-end xl:pt-16'>
             {
