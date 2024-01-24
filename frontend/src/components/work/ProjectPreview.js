@@ -10,6 +10,7 @@ import ArrowUpBold from '../../icons/ArrowUpRightBold.svg'
 import { setProject } from '../../reducer/pageReducer';
 import { AnimatePresence } from 'framer-motion';
 
+
 const WorkListItem = ({data, isHover, setIsHover}) => {
     const dispatch = useDispatch();
     const project = useSelector(state => state.pages.project)
@@ -37,7 +38,7 @@ const WorkListItem = ({data, isHover, setIsHover}) => {
                     </p>
 
                     {/* PREV IMG */}
-                    <img src={require(`../../images/${prevImg}`)} alt={prevImg} className='absolute right-96 w-40 z-20 hidden group-hover:flex'  />
+                    <img src={require(`../../images/${prevImg}`)} alt={prevImg} className='absolute right-11 md:right-24 xl:right-96 pt-6 xl:pt-3 w-32 md:w-40 z-20 hidden group-hover:flex' />
                 </motion.div>
         }
 

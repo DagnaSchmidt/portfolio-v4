@@ -5,6 +5,8 @@ import { useSelector } from 'react-redux';
 //components
 import BoringStories from '../projects/BoringStories';
 import Mi from '../projects/Mi';
+import Movies4you from '../projects/Movies4you';
+import Finovo from '../projects/Finovo';
 
 
 const ProjectContainer = () => {
@@ -34,6 +36,12 @@ const ProjectContainer = () => {
                 }
                 {
                     project === 'Mi' && <Mi />
+                }
+                {
+                    project === 'Movies4you' && <Movies4you />
+                }
+                {
+                    project === 'Finovo' && <Finovo />
                 }
             </AnimatePresence>
 
