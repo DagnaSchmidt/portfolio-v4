@@ -10,14 +10,14 @@
 
 <br />
 <div align="center">
-    <img src="./screens//logo-boring-stories.png" alt="Logo" width="880">
+    <img src="./screens//logo-portfolio-v4.png" alt="Logo" width="880">
 
-  <h3 align="center">Portfolio - v4</h3>
+  <h3 align="center">Fullstack Developer Portfolio - v4</h3>
 
   <p align="center">
     <br />
     <br />
-    <a href="https://boring-stories.netlify.app">View Demo</a>
+    <a href="https://dschmidt.netlify.app/">View Demo</a>
     ·
     <a href="https://dribbble.com/shots/23010524-Boring-Stories-UI">View UI design</a>
   </p>
@@ -28,15 +28,15 @@
 </br>
 
 <div align="center">
-    <img src="./screens//stories-mobile_1.png" alt="Logo" width="280">
-    <img src="./screens//stories-mobile_2.png" alt="Logo" width="280">
-    <img src="./screens//stories-mobile_4.png" alt="Logo" width="280">
+    <img src="./screens//prev1.png" alt="Logo" width="280">
+    <img src="./screens//prev2.png" alt="Logo" width="280">
+    <img src="./screens//prev3.png" alt="Logo" width="280">
 </div>
 
 </br>
 
-<p>Boring Stories website is a photographer's blog. Boasts a clean and simple design, letting the stories take center stage. No distractions, just the pure joy of storytelling.</p>
-<p>Inspired by the belief that even the most ordinary moments have the potential to be extraordinary.</p>
+<p>Fourth version of my portfolio. </p>
+<p>I aimed for clean and intuitive design.</p>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
