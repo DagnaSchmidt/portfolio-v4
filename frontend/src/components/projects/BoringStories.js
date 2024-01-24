@@ -24,7 +24,7 @@ const BoringStories = () => {
       <ProjectHeader data={workData[0]} />
 
       <h3 className='amulya-bold text-lg md:text-xl xl:text-2xl tracking-wider'>{title}</h3>
-      <div className='flex flex-col self-center gap-2 md:flex-row'>
+      <div className='flex flex-col self-center gap-2 md:flex-row md:flex-wrap pb-12'>
         {
           images.mobile.map(i => <img src={require(`../../images/boringStories/${i}`)} alt={i} className='w-60' />)
         }
