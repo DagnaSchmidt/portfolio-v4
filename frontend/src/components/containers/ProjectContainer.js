@@ -18,7 +18,7 @@ const ProjectContainer = () => {
                 height: 0
             }}
             animate={{
-                height: '100%'
+                height: 'auto'
             }}
             exit={{
                 height: 0

@@ -13,7 +13,7 @@ import { AnimatePresence } from 'framer-motion';
 const WorkListItem = ({data, isHover, setIsHover}) => {
     const dispatch = useDispatch();
     const project = useSelector(state => state.pages.project)
-    const { title, categories, description } = data;
+    const { title, categories, description, prevImg } = data;
 
 
   return (
@@ -22,7 +22,7 @@ const WorkListItem = ({data, isHover, setIsHover}) => {
         {
             project === null &&
                 <motion.div
-                    className={`max-w-[1480px] py-8 px-2 md:px-8 xl:px-56 text-secondary flex flex-col gap-2 ${isHover.button === title ? 'opacity-100 cursor-pointer' : isHover.isHover ? 'opacity-35' : 'opacity-100'}`}
+                    className={`group max-w-[1480px] py-8 mx-2 md:mx-8 xl:mx-56 text-secondary flex flex-col gap-2 ${isHover.button === title ? 'opacity-100 cursor-pointer' : isHover.isHover ? 'opacity-35' : 'opacity-100'}`}
                     onMouseEnter={() => setIsHover({isHover: true, button: title})}
                     onMouseLeave={() => setIsHover({isHover: false, button: ''})}
                     onClick={() => dispatch(setProject(title))}
@@ -35,6 +35,9 @@ const WorkListItem = ({data, isHover, setIsHover}) => {
                     <p className='pl-12'>
                         {description}
                     </p>
+
+                    {/* PREV IMG */}
+                    <img src={require(`../../images/${prevImg}`)} alt={prevImg} className='absolute right-96 w-40 z-20 hidden group-hover:flex'  />
                 </motion.div>
         }
 

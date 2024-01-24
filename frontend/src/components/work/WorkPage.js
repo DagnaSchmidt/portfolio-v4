@@ -6,7 +6,7 @@ import { useSelector } from 'react-redux';
 import { workData } from '../../data/workData';
 
 //components
-import WorkListItem from './WorkListItem';
+import ProjectPreview from './ProjectPreview';
 import ProjectContainer from '../containers/ProjectContainer';
 
 const WorkPage = () => {
@@ -35,7 +35,7 @@ const WorkPage = () => {
       </AnimatePresence>
 
       {
-        workData.map(i => <WorkListItem key={i.id} data={i} isHover={isHover} setIsHover={setIsHover} /> )
+        workData.map(i => <ProjectPreview key={i.id} data={i} isHover={isHover} setIsHover={setIsHover} /> )
       }
 
     </motion.div>
