@@ -97,6 +97,20 @@ export const workData = [
         title: 'Finovo',
         prevImg: 'prev_finovo.png',
         categories: 'App design  ||  UI',
-        description: "Boring Stories website is a photographer's blog. Boasts a clean and simple design, letting the stories take center stage. No distractions, just the pure joy of storytelling.",
+        description: "Take control of your financial destiny with Finovo, a revolutionary finance app designed to simplify and elevate your money management experience. Finovo isn't just a finance app; it's a financial ally that puts the power of financial well-being in your hands.",
+        links: [
+            {
+                id: 1,
+                title: 'UI design',
+                link: 'https://dribbble.com/shots/23028556-Finovo-Finance-App-UI'
+            }
+        ],
+        buildOn: [
+            {
+                id: 1,
+                title: 'Frontend',
+                stack: ['Figma']
+            }
+        ]
     }
 ];

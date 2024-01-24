@@ -3,13 +3,14 @@ import { motion } from 'framer-motion';
 
 //data
 import { workData } from '../../data/workData';
-import { boringStoriesData } from '../../data/boringStoriesData';
+import { finovoData } from '../../data/finovoData';
 
 //components
 import ProjectHeader from '../work/ProjectHeader';
 
-const BoringStories = () => {
-  const { title, images } = boringStoriesData.designs;
+
+const Finovo = () => {
+    const { title, images } = finovoData.designs;
 
   return (
     <motion.div
@@ -21,12 +22,12 @@ const BoringStories = () => {
         duration: 0.3
       }}
     >
-      <ProjectHeader data={workData[0]} />
+      <ProjectHeader data={workData[3]} />
 
-      <h3 className='amulya-bold text-lg md:text-xl xl:text-2xl tracking-wider'>{title}</h3>
+      <h3 className='amulya-bold text-lg md:text-xl xl:text-2xl tracking-wider pt-20'>{title}</h3>
       <div className='flex flex-col self-center md:justify-center gap-2 md:flex-row md:flex-wrap pb-12'>
         {
-          images.mobile.map(i => <img src={require(`../../images/boringStories/${i}`)} alt={i} className='w-60' />)
+          images.mobile.map(i => <img src={require(`../../images/finovo/${i}`)} alt={i} className='w-60' />)
         }
       </div>
 
@@ -34,4 +35,4 @@ const BoringStories = () => {
   )
 }
 
-export default BoringStories;
+export default Finovo;
