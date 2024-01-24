@@ -10,6 +10,7 @@ import ArrowUpBold from '../../icons/ArrowUpRightBold.svg'
 import { setProject } from '../../reducer/pageReducer';
 import { AnimatePresence } from 'framer-motion';
 
+
 const WorkListItem = ({data, isHover, setIsHover}) => {
     const dispatch = useDispatch();
     const project = useSelector(state => state.pages.project)
