@@ -6,14 +6,26 @@ export const miData = {
     ],
     background: {
         title: 'Background',
-        description: "Traditional calendar apps often lack features that cater to the specific demands of freelancers working across time zones or individuals juggling multiple aspects of their lives, such as health tracking and pet care. This research seeks to identify these pain points, understand user behaviors, and leverage these insights to develop a comprehensive solution that aligns with the modern user's dynamic and multifaceted lifestyle. Through a deep dive into user journeys, expectations, and preferences, we aim to bridge the existing gaps and provide a refined solution that becomes an integral part of users' daily routines.",
+        description: "When seeking calendar app recommendations from friends, I discovered a shared opinion — each one of them faced challenges in discovering an app that comprehensively met their unique needs. These needs varied significantly among my friends, highlighting the diversity of user preferences. Motivated by this realization, I envisioned a solution: a foundational calendar app with extensive customization possibilities.",
+    },
+    goal: {
+        title: 'Goal',
+        description: "The core idea is to empower users to create their calendar experience by deciding which features they wish to use, providing a tailored solution for individualized scheduling needs."
+    },
+    research: {
+        title: 'Research',
+        description: "I decided to do competitive research on top calendar related apps. I also conducted in-depth user interviews, which helped me create two completely different user personas and journey maps. I've found that apps that have a lot of customization options require a learning curve for new users and are complicated to use."
+    },
+    solution: {
+        title: 'My solution',
+        description: "To avoid learning curve and provide intuitive experience, I added easy-to-use templates and features highlights. I gave the user an opportunity to choose which features would be displayed in their calendar app."
     },
     journeyMaps: {
         title: 'Journey maps',
         maps: [
             {
                 id: 1,
-                persona: 'Ted',
+                persona: 'Designer Ted',
                 scenario: 'Freelance, skilled designer, trying to organize deadlines, meetings and coordination of collaborators. Ted is an immigrant, residing in a different time zone than his actual home. Desires a user-friendly interface that seamlessly transitions between his mobile and laptop devices, both at work and home.',
                 expectations: [
                     'A straightforward method to create projects, set deadlines, and share them with team members.',
@@ -25,7 +37,7 @@ export const miData = {
             },
             {
                 id: 2,
-                persona: 'Kasia',
+                persona: 'Katarzyna Kasia',
                 scenario: 'Remote worker navigating the delicate balance of professional commitments and a personal life. Kasia seeks an solution that harmoniously manages her health and the well-being of her three cats.',
                 expectations: [
                     'A straightforward method for accurately recording and monitoring working hours.',

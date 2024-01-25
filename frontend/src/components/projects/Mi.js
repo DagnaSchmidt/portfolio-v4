@@ -7,10 +7,12 @@ import { miData } from '../../data/miData';
 
 //components
 import ProjectHeader from '../work/ProjectHeader';
+import ProjectSection from './ProjectSection';
+import ProjectJourneyMap from './ProjectJourneyMap';
 
 
 const Mi = () => {
-  const { prevImg, background, journeyMaps } = miData;
+  const { prevImg, background, goal, research, solution, journeyMaps } = miData;
 
   return (
     <motion.div
@@ -24,22 +26,34 @@ const Mi = () => {
     >
       <ProjectHeader data={workData[1]} />
 
-      {/* PROJECT PREVIEW */}
-      <h3 className='amulya-bold text-lg md:text-xl xl:text-2xl tracking-wider pt-6 xl:pt-12'>Project preview</h3>
-      <div className='flex self-center gap-2 flex-row md:flex-wrap'>
-        {
-          prevImg.map(i => <img src={require(`../../images/mi/${i}`)} alt={i} className='w-20 xl:w-40' />)
-        }
+      <div className='flex flex-col gap-10 md:gap-16'>
+
+          {/* PROJECT PREVIEW */}
+          <h3 className='amulya-bold text-lg md:text-xl xl:text-2xl tracking-wider pt-6 xl:pt-12'>Project preview</h3>
+          <div className='flex self-center gap-2 flex-row md:flex-wrap'>
+            {
+              prevImg.map(i => <img src={require(`../../images/mi/${i}`)} alt={i} className='w-20 xl:w-40' />)
+            }
+          </div>
+
+          <ProjectSection title={background.title} description={background.description} />
+          <ProjectSection title={goal.title} description={goal.description} />
+          <ProjectSection title={research.title} description={research.description} />
+          <ProjectSection title={solution.title} description={solution.description} />
+
+          {/* JOURNEY MAPS */}
+          <div className='flex flex-col md:flex-row gap-4 md:gap-16 xl:gap-24'>
+              <div>
+                <h3 className='amulya-bold text-lg md:text-xl xl:text-2xl tracking-wider w-32'>{journeyMaps.title}</h3>
+              </div>
+              <div className='flex flex-col md:flex-row gap-12'>
+                  {
+                    journeyMaps.maps.map(i => <ProjectJourneyMap data={i} key={i.id} />)
+                  }
+              </div>
+          </div>
       </div>
 
-      {/* BACKGROUND */}
-      <div className='flex gap-10 md:gap-16 pt-4'>
-        <h3 className='amulya-bold text-lg md:text-xl xl:text-2xl tracking-wider'>{background.title}</h3>
-        <p className='amulya text-sm lg:text-base'>{background.description}</p>
-      </div>
-
-      {/* JOURNEY MAPS */}
-      <h3 className='amulya-bold text-lg md:text-xl xl:text-2xl tracking-wider pt-6 xl:pt-12'>{journeyMaps.title}</h3>
 
       {
         journeyMaps.maps.map(i => {
