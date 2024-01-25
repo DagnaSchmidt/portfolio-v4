@@ -21,7 +21,7 @@ export const miData = {
         description: "To avoid learning curve and provide intuitive experience, I added easy-to-use templates and features highlights. I gave the user an opportunity to choose which features would be displayed in their calendar app."
     },
     journeyMaps: {
-        title: 'Journey maps',
+        title: 'Journey map and User Persona',
         maps: [
             {
                 id: 1,
@@ -33,19 +33,21 @@ export const miData = {
                     'An easy way to set up notifications that matter, ensuring no crucial deadline or meeting is missed.',
                     'Effortless switching of calendar views, including time zone adjustments and flexible week layouts.'
                 ],
-                image: 'mi_journey_map_ted.png'
+                image: 'mi_journey_map_ted.png',
+                personaImage: 'mi_persona_ted.png'
             },
             {
                 id: 2,
-                persona: 'Katarzyna Kasia',
+                persona: 'Content Writer Kasia',
                 scenario: 'Remote worker navigating the delicate balance of professional commitments and a personal life. Kasia seeks an solution that harmoniously manages her health and the well-being of her three cats.',
                 expectations: [
                     'A straightforward method for accurately recording and monitoring working hours.',
                     'A dedicated space within the calendar to track menstrual and ovulation cycles discreetly.',
                     'An easy-to-use system to manage her three feline companions medications, vet visits, and timely reminders.'
                 ],
-                image: 'mi_journey_map_kasia.png'
+                image: 'mi_journey_map_kasia.png',
+                personaImage: 'mi_persona_kasia.png'
             }
         ]
-},
+    }
 }
