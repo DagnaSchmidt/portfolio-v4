@@ -52,22 +52,18 @@ const Mi = () => {
                   }
               </div>
           </div>
+          <div className='flex flex-col items-center gap-2'>
+              {
+                  journeyMaps.maps.map(i => <img key={i.id} src={require(`../../images/mi/${i.image}`)} alt={i.image} className='w-dvw rounded-xl' />)
+              }
+              {
+                  journeyMaps.maps.map(i => <img key={i.id} src={require(`../../images/mi/${i.personaImage}`)} alt={i.personaImage} className='w-[80%] rounded-xl' />)
+              }
+          </div>
+
+          {/* USER PERSONA */}
+
       </div>
-
-
-      {
-        journeyMaps.maps.map(i => {
-          return (
-            <div key={i.id}>
-              <img src={require(`../../images/mi/${i.image}`)} alt={i.image} />
-              <div className='flex gap-10 md:gap-16 pt-4'>
-                <h5>{i.persona} journey map</h5>
-                <p></p>
-              </div>
-            </div>
-          )
-        })
-      }
 
 
     </motion.div>
