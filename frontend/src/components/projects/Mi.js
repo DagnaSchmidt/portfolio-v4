@@ -10,7 +10,7 @@ import ProjectHeader from '../work/ProjectHeader';
 
 
 const Mi = () => {
-  const { prevImg, background, journeyMaps } = miData;
+  const { prevImg, background, goal, research, solution, journeyMaps } = miData;
 
   return (
     <motion.div
@@ -34,12 +34,51 @@ const Mi = () => {
 
       {/* BACKGROUND */}
       <div className='flex gap-10 md:gap-16 pt-4'>
-        <h3 className='amulya-bold text-lg md:text-xl xl:text-2xl tracking-wider'>{background.title}</h3>
+        <h3 className='amulya-bold text-lg md:text-xl xl:text-2xl tracking-wider w-64'>{background.title}</h3>
         <p className='amulya text-sm lg:text-base'>{background.description}</p>
       </div>
 
+      {/* GOAL */}
+      <div className='flex gap-10 md:gap-16 pt-4'>
+        <h3 className='amulya-bold text-lg md:text-xl xl:text-2xl tracking-wider w-64'>{goal.title}</h3>
+        <p className='amulya text-sm lg:text-base'>{goal.description}</p>
+      </div>
+
+      {/* RESEARCH */}
+      <div className='flex gap-10 md:gap-16 pt-4'>
+        <h3 className='amulya-bold text-lg md:text-xl xl:text-2xl tracking-wider w-64'>{research.title}</h3>
+        <p className='amulya text-sm lg:text-base'>{research.description}</p>
+      </div>
+
+      {/* SOLUTION */}
+      <div className='flex gap-10 md:gap-16 pt-4'>
+        <h3 className='amulya-bold text-lg md:text-xl xl:text-2xl tracking-wider w-64'>{solution.title}</h3>
+        <p className='amulya text-sm lg:text-base'>{solution.description}</p>
+      </div>
+
       {/* JOURNEY MAPS */}
-      <h3 className='amulya-bold text-lg md:text-xl xl:text-2xl tracking-wider pt-6 xl:pt-12'>{journeyMaps.title}</h3>
+      <div className='flex gap-10 md:gap-16 pt-4'>
+        <h3 className='amulya-bold text-lg md:text-xl xl:text-2xl tracking-wider pt-6 xl:pt-12 w-64'>{journeyMaps.title}</h3>
+        <div className='flex flex-col gap-2'>
+          {
+            journeyMaps.maps.map(i => {
+              return  (
+                    <div key={i.id}>
+                      <p>persona: {i.persona}</p>
+                      <p>scenario: {i.scenario}</p>
+                      <p>expectations:</p>
+                      <ul>
+                        {
+                          i.expectations.map((j, index) => <li key={index}>{j}</li>)
+                        }
+                      </ul>
+                    </div>
+                  )
+            })
+          }
+        </div>
+      </div>
+
 
       {
         journeyMaps.maps.map(i => {
