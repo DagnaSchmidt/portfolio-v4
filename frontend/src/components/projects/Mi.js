@@ -7,6 +7,7 @@ import { miData } from '../../data/miData';
 
 //components
 import ProjectHeader from '../work/ProjectHeader';
+import ProjectSection from './ProjectSection';
 
 
 const Mi = () => {
@@ -32,29 +33,15 @@ const Mi = () => {
         }
       </div>
 
-      {/* BACKGROUND */}
-      <div className='flex gap-10 md:gap-16 pt-4'>
-        <h3 className='amulya-bold text-lg md:text-xl xl:text-2xl tracking-wider w-64'>{background.title}</h3>
-        <p className='amulya text-sm lg:text-base'>{background.description}</p>
-      </div>
+      <ProjectSection title={background.title} description={background.description} />
 
-      {/* GOAL */}
-      <div className='flex gap-10 md:gap-16 pt-4'>
-        <h3 className='amulya-bold text-lg md:text-xl xl:text-2xl tracking-wider w-64'>{goal.title}</h3>
-        <p className='amulya text-sm lg:text-base'>{goal.description}</p>
-      </div>
+      <ProjectSection title={goal.title} description={goal.description} />
 
-      {/* RESEARCH */}
-      <div className='flex gap-10 md:gap-16 pt-4'>
-        <h3 className='amulya-bold text-lg md:text-xl xl:text-2xl tracking-wider w-64'>{research.title}</h3>
-        <p className='amulya text-sm lg:text-base'>{research.description}</p>
-      </div>
+      <ProjectSection title={research.title} description={research.description} />
 
-      {/* SOLUTION */}
-      <div className='flex gap-10 md:gap-16 pt-4'>
-        <h3 className='amulya-bold text-lg md:text-xl xl:text-2xl tracking-wider w-64'>{solution.title}</h3>
-        <p className='amulya text-sm lg:text-base'>{solution.description}</p>
-      </div>
+      <ProjectSection title={solution.title} description={solution.description} />
+
+
 
       {/* JOURNEY MAPS */}
       <div className='flex gap-10 md:gap-16 pt-4'>
