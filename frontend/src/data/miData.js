@@ -25,7 +25,7 @@ export const miData = {
         maps: [
             {
                 id: 1,
-                persona: 'Ted',
+                persona: 'Designer Ted',
                 scenario: 'Freelance, skilled designer, trying to organize deadlines, meetings and coordination of collaborators. Ted is an immigrant, residing in a different time zone than his actual home. Desires a user-friendly interface that seamlessly transitions between his mobile and laptop devices, both at work and home.',
                 expectations: [
                     'A straightforward method to create projects, set deadlines, and share them with team members.',
@@ -37,7 +37,7 @@ export const miData = {
             },
             {
                 id: 2,
-                persona: 'Kasia',
+                persona: 'Katarzyna Kasia',
                 scenario: 'Remote worker navigating the delicate balance of professional commitments and a personal life. Kasia seeks an solution that harmoniously manages her health and the well-being of her three cats.',
                 expectations: [
                     'A straightforward method for accurately recording and monitoring working hours.',
