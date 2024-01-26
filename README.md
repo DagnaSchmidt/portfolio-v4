@@ -17,7 +17,7 @@
   <p align="center">
     <br />
     <br />
-    <a href="https://d-schmidt.netlify.app">View Demo</a>
+    <a href="https://dschmidt.netlify.app">View Demo</a>
     ·
     <a href="https://dribbble.com/shots/23507444-Developer-Portfolio">View UI design</a>
   </p>
