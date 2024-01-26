@@ -9,7 +9,7 @@ export const aboutData = {
         {
             id: 2,
             title: 'took photos in a coffee can',
-            link: 'https://www.instagram.com/p/CQYB7vcgyBI/?igsh=MWttbmFtYjBzYmllZw=='
+            link: ''
         },
         {
             id: 3,
