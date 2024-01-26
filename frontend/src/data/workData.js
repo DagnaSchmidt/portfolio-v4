@@ -25,11 +25,16 @@ export const workData = [
         buildOn: [
             {
                 id: 1,
+                title: 'UI',
+                stack: ['Figma']
+            },
+            {
+                id: 2,
                 title: 'Frontend',
                 stack: ['React', 'Redux', 'Axios', 'Tailwind', 'Framer Motion']
             },
             {
-                id: 2,
+                id: 3,
                 title: 'Backend',
                 stack: ['REST API', 'Express', 'MongoDB']
             }
@@ -41,27 +46,11 @@ export const workData = [
         prevImg: 'prev_mi.png',
         categories: 'App design  ||  UX / UI  ||  Design System',
         description: "Recognizing the diverse needs of users in balancing work, personal life, and health, this project aims to create a calendar application that seamlessly integrates functionality, style, and personalization.",
-        links: [
-            {
-                id: 1,
-                title: 'Prototype',
-                link: 'https://boring-stories.netlify.app/'
-            },
-            {
-                id: 2,
-                title: 'UI design',
-                link: 'https://boring-stories.netlify.app/'
-            },
-            {
-                id: 3,
-                title: 'Design System',
-                link: 'https://boring-stories.netlify.app/'
-            }
-        ],
+        links: [],
         buildOn: [
             {
                 id: 1,
-                title: 'Frontend',
+                title: 'UI',
                 stack: ['Figma']
             }
         ]
@@ -87,7 +76,7 @@ export const workData = [
         buildOn: [
             {
                 id: 1,
-                title: 'Frontend',
+                title: 'UI',
                 stack: ['Figma']
             }
         ]
@@ -108,7 +97,7 @@ export const workData = [
         buildOn: [
             {
                 id: 1,
-                title: 'Frontend',
+                title: 'UI',
                 stack: ['Figma']
             }
         ]

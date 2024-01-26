@@ -60,6 +60,11 @@ const Mi = () => {
             <ProjectImage title='' image={journeyMaps.maps[1].personaImage} />
           </div>
 
+          {/* UNDER CONSTRUCTION INFO */}
+          <div className='flex flex-col gap-4 pb-24'>
+            <h3 className='amulya-bold text-lg md:text-xl xl:text-2xl tracking-wider pt-6 xl:pt-12'>User flow, navigation architecture, wireframes and prototype will be here soon.</h3>
+            <p className='amulya text-base'>I am still polishing the application details.</p>
+          </div>
 
       </div>
 
