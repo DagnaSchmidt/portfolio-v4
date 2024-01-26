@@ -13,7 +13,7 @@ const ProjectJourneyMap = ({data}) => {
         </div>
         <div className='flex flex-col gap-2 items-start'>
             <p className='amulya-medium text-xs lg:text-sm'>expectations:</p>
-            <ul>
+            <ul className='flex flex-col gap-1'>
                 {
                     expectations.map((i, index) => <li key={index} className='amulya text-sm lg:text-base'>- {i}</li>)
                 }

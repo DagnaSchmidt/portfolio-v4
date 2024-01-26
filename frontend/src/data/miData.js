@@ -26,7 +26,7 @@ export const miData = {
             {
                 id: 1,
                 persona: 'Designer Ted',
-                scenario: 'Freelance, skilled designer, trying to organize deadlines, meetings and coordination of collaborators. Ted is an immigrant, residing in a different time zone than his actual home. Desires a user-friendly interface that seamlessly transitions between his mobile and laptop devices, both at work and home.',
+                scenario: 'Freelance, skilled designer, trying to organize deadlines, meetings and coordination of collaborators. Desires a user-friendly interface that seamlessly transitions between his mobile and laptop devices, both at work and home.',
                 expectations: [
                     'A straightforward method to create projects, set deadlines, and share them with team members.',
                     'Streamlined processes for creating meetings and inviting collaborators.',
