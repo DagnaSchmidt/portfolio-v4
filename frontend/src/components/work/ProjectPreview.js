@@ -23,7 +23,7 @@ const WorkListItem = ({data, isHover, setIsHover}) => {
         {
             project === null &&
                 <motion.div
-                    className={`group max-w-[1480px] py-8 mx-2 md:mx-8 xl:mx-56 text-secondary flex flex-col gap-2 ${isHover.button === title ? 'opacity-100 cursor-pointer' : isHover.isHover ? 'opacity-35' : 'opacity-100'}`}
+                    className={`group max-w-[1080px] py-8 mx-2 md:mx-8 xl:mx-56 text-secondary flex flex-col gap-2 ${isHover.button === title ? 'opacity-100 cursor-pointer' : isHover.isHover ? 'opacity-35' : 'opacity-100'}`}
                     onMouseEnter={() => setIsHover({isHover: true, button: title})}
                     onMouseLeave={() => setIsHover({isHover: false, button: ''})}
                     onClick={() => dispatch(setProject(title))}

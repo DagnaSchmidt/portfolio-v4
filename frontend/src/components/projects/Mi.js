@@ -33,7 +33,7 @@ const Mi = () => {
           <h3 className='amulya-bold text-lg md:text-xl xl:text-2xl tracking-wider pt-6 xl:pt-12'>Project preview</h3>
           <div className='flex self-center gap-2 flex-row md:flex-wrap'>
             {
-              prevImg.map(i => <img src={require(`../../images/mi/${i}`)} alt={i} className='w-20 xl:w-40' />)
+              prevImg.map(i => <img key={i} src={require(`../../images/mi/${i}`)} alt={i} className='w-20 xl:w-40' />)
             }
           </div>
 
