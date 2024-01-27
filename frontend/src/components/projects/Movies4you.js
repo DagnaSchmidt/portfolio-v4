@@ -28,7 +28,7 @@ const Movies4you = () => {
       <h3 className='amulya-bold text-lg md:text-xl xl:text-2xl tracking-wider pt-20'>{title}</h3>
       <div className='flex flex-col self-center md:justify-center gap-2 md:flex-row md:flex-wrap pb-12'>
         {
-          images.mobile.map(i => <img src={require(`../../images/movies4you/${i}`)} alt={i} className='w-60' />)
+          images.mobile.map(i => <img key={i} src={require(`../../images/movies4you/${i}`)} alt={i} className='w-60' />)
         }
       </div>
 
