@@ -73,7 +73,7 @@ const MainContainer = () => {
         </AnimatePresence>
 
         <motion.div
-            className='bg-primary'
+            className='bg-primary flex justify-center'
             variants={variants}
             initial='close'
             animate={page !== 'home' ? 'open' : isHover.isHover ? 'hover' : 'close'}

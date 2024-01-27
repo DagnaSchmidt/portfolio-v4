@@ -15,7 +15,7 @@ const ProjectContainer = () => {
 
   return (
         <motion.div
-            className='bg-secondary w-full'
+            className='bg-secondary w-full flex justify-center'
             initial={{
                 height: 0
             }}
