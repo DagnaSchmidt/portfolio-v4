@@ -66,5 +66,6 @@ export const miData = {
             description: "User flow for existing user (Designer Ted). Invite team members to meeting and change time zone.",
             images: ["user_flow_invite_members_and_change_time_zone.png"]
         }
-    ]
+    ],
+    navigationArchitecture: 'navigation_architecture.png'
 }
