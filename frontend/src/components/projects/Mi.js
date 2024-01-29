@@ -13,7 +13,7 @@ import ProjectImage from './ProjectImage';
 
 
 const Mi = () => {
-  const { prevImg, background, goal, research, solution, journeyMaps } = miData;
+  const { prevImg, background, goal, research, solution, journeyMaps, userFlows } = miData;
 
   return (
     <motion.div
@@ -60,9 +60,27 @@ const Mi = () => {
             <ProjectImage title='' image={journeyMaps.maps[1].personaImage} />
           </div>
 
+
+          <div className='flex flex-col gap-4'>
+            <ProjectSection title={userFlows[0].title} description={userFlows[0].description} />
+            <ProjectImage title='' image={userFlows[0].images[0]} />
+            <ProjectImage title='' image={userFlows[0].images[1]} />
+          </div>
+
+          <div className='flex flex-col gap-4'>
+            <ProjectSection title={userFlows[1].title} description={userFlows[1].description} />
+            <ProjectImage title='' image={userFlows[1].images[0]} />
+          </div>
+
+          <div className='flex flex-col gap-4'>
+            <ProjectSection title={userFlows[2].title} description={userFlows[2].description} />
+            <ProjectImage title='' image={userFlows[2].images[0]} />
+          </div>
+
+
           {/* UNDER CONSTRUCTION INFO */}
           <div className='flex flex-col gap-4 pb-24'>
-            <h3 className='amulya-bold text-lg md:text-xl xl:text-2xl tracking-wider pt-6 xl:pt-12'>User flow, navigation architecture, wireframes and prototype will be here soon.</h3>
+            <h3 className='amulya-bold text-lg md:text-xl xl:text-2xl tracking-wider pt-6 xl:pt-12'>Navigation architecture, wireframes and prototype will be here soon.</h3>
             <p className='amulya text-base'>I am still polishing the application details.</p>
           </div>
 
