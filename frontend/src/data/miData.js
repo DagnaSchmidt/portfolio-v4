@@ -49,5 +49,22 @@ export const miData = {
                 personaImage: 'mi_persona_kasia.png'
             }
         ]
-    }
+    },
+    userFlows: [
+        {
+            title: 'User flow I',
+            description: "User flow for new user (Content writer Kasia). Launch the app and start tracking working hours.",
+            images: ["user_flow_register.png", "user_flow_track_hours.png"]
+        },
+        {
+            title: 'User flow II',
+            description: "User flow for existing user (Content writer Kasia). Create private health section and log menstrual days discreetly.",
+            images: ["user_flow_create_private_section.png"]
+        },
+        {
+            title: 'User flow III',
+            description: "User flow for existing user (Designer Ted). Invite team members to meeting and change time zone.",
+            images: ["user_flow_invite_members_and_change_time_zone.png"]
+        }
+    ]
 }
