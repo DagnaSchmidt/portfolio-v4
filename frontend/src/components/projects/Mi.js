@@ -13,7 +13,7 @@ import ProjectImage from './ProjectImage';
 
 
 const Mi = () => {
-  const { prevImg, background, goal, research, solution, journeyMaps, userFlows } = miData;
+  const { prevImg, background, goal, research, solution, journeyMaps, userFlows, navigationArchitecture } = miData;
 
   return (
     <motion.div
@@ -77,10 +77,12 @@ const Mi = () => {
             <ProjectImage title='' image={userFlows[2].images[0]} />
           </div>
 
+          <ProjectImage title='Navigation architecture' image={navigationArchitecture} />
+
 
           {/* UNDER CONSTRUCTION INFO */}
           <div className='flex flex-col gap-4 pb-24'>
-            <h3 className='amulya-bold text-lg md:text-xl xl:text-2xl tracking-wider pt-6 xl:pt-12'>Navigation architecture, wireframes and prototype will be here soon.</h3>
+            <h3 className='amulya-bold text-lg md:text-xl xl:text-2xl tracking-wider pt-6 xl:pt-12'>Wireframes and prototype will be here soon.</h3>
             <p className='amulya text-base'>I am still polishing the application details.</p>
           </div>
 
