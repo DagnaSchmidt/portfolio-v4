@@ -92,7 +92,7 @@ export const workData = [
             {
                 id: 2,
                 title: 'Frontend',
-                stack: ['React', 'TypeScript', 'Axios', 'Tailwind']
+                stack: ['React', 'Next.js', 'TypeScript', 'Axios', 'Tailwind']
             },
             {
                 id: 3,
