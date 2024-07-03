@@ -67,5 +67,15 @@ export const miData = {
             images: ["user_flow_invite_members_and_change_time_zone.png"]
         }
     ],
-    navigationArchitecture: 'navigation_architecture.png'
+    navigationArchitecture: 'navigation_architecture.png',
+    blockframes: {
+        title: 'Blockframes',
+        description: `Before I started working on wireframes, I created blockframes (using the great 'Blockframes Starter Kit' from Z1) to better organize my work.`,
+        image: "mi_blockframes.jpg"
+    },
+    wireframes: {
+        title: 'Wireframes',
+        description: "The next step was to create digital wireframes.",
+        images: ["mi_wireframes_1.jpg", "mi_wireframes_2.jpg"]
+    }
 }
