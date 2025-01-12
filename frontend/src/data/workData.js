@@ -121,5 +121,31 @@ export const workData = [
                 stack: ['Figma']
             }
         ]
+    },
+    {
+        id: 5,
+        title: 'Maja Penzion',
+        prevImg: 'prev_maja.png',
+        categories: 'Website design  ||  Frontend  ||  Logo Design',
+        description: "Penzion Maja is Polish guesthouse in the Czech Karkonosze Mountains. Discover the charm of the Czech Karkonosze Mountains by staying at the Mája Pension - a place where silence and nature create ideal conditions for relaxation and regeneration.",
+        links: [
+            {
+                id: 1,
+                title: 'Demo',
+                link: 'https://penzionmaja.com/'
+            }
+        ],
+        buildOn: [
+            {
+                id: 1,
+                title: 'UI',
+                stack: ['Figma']
+            },
+            {
+                id: 2,
+                title: 'Frontend',
+                stack: ['WordPress']
+            }
+        ]
     }
 ];
