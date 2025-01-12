@@ -1,5 +1,5 @@
 import React from 'react';
-import  { AnimatePresence, motion } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { useSelector } from 'react-redux';
 
 //components
@@ -7,13 +7,14 @@ import BoringStories from '../projects/BoringStories';
 import Mi from '../projects/Mi';
 import Movies4you from '../projects/Movies4you';
 import Finovo from '../projects/Finovo';
+import Maja from '../projects/Maja';
 
 
 const ProjectContainer = () => {
     const project = useSelector(state => state.pages.project);
 
 
-  return (
+    return (
         <motion.div
             className='bg-secondary w-full flex justify-center'
             initial={{
@@ -43,11 +44,14 @@ const ProjectContainer = () => {
                 {
                     project === 'Finovo' && <Finovo />
                 }
+                {
+                    project === 'Maja Penzion' && <Maja />
+                }
             </AnimatePresence>
 
         </motion.div>
 
-  )
+    )
 };
 
 export default ProjectContainer;
