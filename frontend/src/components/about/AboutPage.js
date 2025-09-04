@@ -32,7 +32,7 @@ const AboutPage = () => {
           <p className='amulya text-sm lg:text-base pl-12'>{aboutData.description}</p>
         </div>
         <div className='w-32 self-center md:self-end md:mx-12 xl:mx-24'>
-          <a href='https://drive.google.com/file/d/1WKHFIS0NgqPQNKMfsBXUicBmwguKJXlD/view?usp=drive_link' target='_blank' rel='noreferrer' className='amulya-light hover:italic w-32 pb-1 border-b border-secondary whitespace-nowrap'>
+          <a href='https://drive.google.com/file/d/16Pin46Z-R7LL5EvKG96xxLAcIrVqAKCp/view' target='_blank' rel='noreferrer' className='amulya-light hover:italic w-32 pb-1 border-b border-secondary whitespace-nowrap'>
             download CV
           </a>
         </div>
